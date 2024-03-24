@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <title>P150</title>
+    </head>
+    <body>
+        <a-scene background="color:lightblue">
+            <a-entity id="camera" camera position="0.2 4 -3" ></a-entity>
+            <a-assets>
+                <a-asset-item id="train" src="./Project-150.glb"></a-asset-item>
+            </a-assets>
+            <a-entity>
+                <a-box position="-19.4 4 -25" height="9" width="78.5" src="https://th.bing.com/th/id/R.f4e405c159fd587ba1325600639391e2?rik=FgUhndPGsLpuGw&riu=http%3a%2f%2fwww.godeli.co.nz%2fimages%2fwall.jpeg&ehk=u0Uw0WezwaLE0gHVi%2bbb3dclJQI1Ih7SZAHm6FW8qk0%3d&risl=&pid=ImgRaw&r=0"  rotation="0 -17 1"></a-box>
+                <a-box position="-13 -0.7 -21" color="black" width="75" rotation="10 -15 0"></a-box>
+                <a-box position="-13 -0.7 -18.5" color="yellow" width="75" rotation="10 -15 0"></a-box>
+                <a-box position="-13 -0.75 -17.7" color="black" width="75" rotation="10 -15 0"></a-box>
+                <a-box position="0 -0.75 -6" color="yellow" width="75" depth="10" rotation="10 -15 0"></a-box>
+            </a-entity>
+            <a-entity>
+                <a-entity position="0 0 -14" scale="0.1 0.1 0.1" rotation="0 165 0" gltf-model="#train"></a-entity>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
